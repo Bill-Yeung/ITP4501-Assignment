@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ITP4501-EA-Assignment</string>
+    <string name="title_activity_how_to_play">howToPlay</string>
+    <string name="opponent">ChooseOpponent</string>
+    <string name="Opponent">Choose your opponent</string>
+    <string-array name="Opponent_array">
+        <item>Apple</item>
+        <item>Ben</item>
+        <item>Cat</item>
+        <item>Den</item>
+        <item>Tom</item>
+        <item>John</item>
+        <item>Sunny</item>
+        <item>Mario</item>
+    </string-array>
+</resources>

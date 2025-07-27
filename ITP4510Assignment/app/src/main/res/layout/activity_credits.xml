@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Credits"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/Tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:textSize="30dp"
+        android:text="Credits"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Tvcontent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Tvcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Author: Yeung Wang Sang\n\nStudent ID: 240021235\n\nCourse: ITP4501 EA Assignment\n\nContact: 240021235@stu.vtc.edu.hk"
+
+        android:fontFamily="@font/bitcount_grid_double_var"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

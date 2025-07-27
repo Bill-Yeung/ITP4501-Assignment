@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg2"
+    tools:context=".FinalResultActivity">
+
+    <TextView
+        android:id="@+id/tvFinalResultMessage"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:text="You Win! 🎉" />
+
+    <TextView
+        android:id="@+id/tvRoundsPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        tools:text="Finished in 3 rounds" />
+
+    <TextView
+        android:id="@+id/tvActualTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:text="Actual Total: 15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Move"
+                android:textSize="18sp"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:id="@+id/ivPlayerRightHand"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    tools:src="@drawable/right0"/>
+                <ImageView
+                    android:id="@+id/ivPlayerLeftHand"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    tools:src="@drawable/left5"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPlayerFingers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                tools:text="Fingers: 5" />
+
+            <TextView
+                android:id="@+id/tvPlayerGuess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                tools:text="Guess: 15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOpponentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textColor="@color/white"
+                tools:text="CPU's Move" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView
+                    android:id="@+id/ivOpponentRightHand"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    tools:src="@drawable/right5"/>
+
+                <ImageView
+                    android:id="@+id/ivOpponentLeftHand"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    tools:src="@drawable/left0"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOpponentFingers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                tools:text="Fingers: 10" />
+
+            <TextView
+                android:id="@+id/tvOpponentGuess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/bitcount_grid_double_var"
+                android:textColor="@color/white"
+                tools:text="Guess: 10" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:text="Home Page" />
+
+    <Button
+        android:id="@+id/btnViewRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:text="View Records" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:layout_marginTop="8dp"
+        android:text="Exit" />
+
+</LinearLayout>

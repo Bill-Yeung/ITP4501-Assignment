@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/pageChooseOpponent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="25dp"
+            android:id="@+id/rvOpponentList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvChosenOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chosen Opponent"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:background="@drawable/rounded_corner_background"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/btnCreateOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Create Opponent"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner_background"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pageCreateOpponent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter New Opponent Name"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputNewOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opponent Name"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSaveOpponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvRecordMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Opponent: CPU - Result: Win"/>
+
+    <TextView
+        android:id="@+id/tvRecordSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:text="2025-07-04 16:43 | Rounds: 3"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/background"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+
+        android:layout_marginBottom="40dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Volume"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:layout_gravity="center"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progressTint="#FFFFFF"
+        android:thumbTint="#FFFFFF"
+        android:max="100"
+        tools:progress="50"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchMute"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mute Music"
+        android:textSize="30dp"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        app:thumbTint="#FFFFFF"
+        app:trackTint="@color/switch_track_colors"
+        />
+
+</LinearLayout>

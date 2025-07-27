@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg2"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        tools:text="Round 1" />
+
+    <TextView
+        android:id="@+id/tvOpponent"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="Opponent: CPU" />
+
+    <TextView
+        android:id="@+id/tvCheatJson"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="{ 'cheat_json': 'data' }" />
+
+    <TextView
+        android:id="@+id/tvGuessTheNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Guess the Total Number"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvfingerNumber"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcount_grid_double_var"
+        android:gravity="center"
+        android:text="Choose Your Finger Combination\n Right Hand"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgRightHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RBright0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_right_0"
+                android:button="@null"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/RBright5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_right_5"
+                android:button="@null" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvleftHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bitcount_grid_double_var"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Left Hand"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgLeftHand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <RadioButton
+                android:id="@+id/RBleft0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_left_0"
+                android:button="@null"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/RBleft5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_left_5"
+                android:button="@null" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Submit" />
+</LinearLayout>
